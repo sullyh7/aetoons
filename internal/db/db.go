@@ -7,5 +7,5 @@ import (
 )
 
 func Connect(cfg *config.Config) (*gorm.DB, error) {
-	return gorm.Open(sqlite.Open("aetoons.db"), &gorm.Config{})
+	return gorm.Open(sqlite.Open("aetoons.sqlite3"), &gorm.Config{})
 }
