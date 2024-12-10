@@ -1,8 +1,17 @@
-# aetoons
 
 # API Documentation
 
 This documentation provides details about the REST API endpoints for the **AeToons** application. This application allows users to manage shows and episodes while integrating with Vimeo and the MyAnimeList (MAL) API for extended functionality.
+
+---
+
+## Base URL
+
+```
+http://<your-server-url>/
+```
+
+---
 
 ## Endpoints
 
@@ -40,7 +49,7 @@ This documentation provides details about the REST API endpoints for the **AeToo
             "id": 1,
             "title": "Episode 1",
             "episode_number": 1,
-            "video_url": "video-url"
+            "video_url": "https://vimeo.com/example"
           }
         ]
       }
@@ -67,8 +76,8 @@ This documentation provides details about the REST API endpoints for the **AeToo
       "id": 21,
       "title": "One Piece",
       "main_picture": {
-        "medium": "medium.jpg",
-        "large": "large.jpg"
+        "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.jpg",
+        "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.jpg"
       }
     }
     ```
@@ -92,7 +101,7 @@ This documentation provides details about the REST API endpoints for the **AeToo
       "id": 1,
       "title": "Episode 1",
       "episode_number": 1,
-      "video_url": "video-url",
+      "video_url": "https://vimeo.com/example",
       "show_id": 1
     }
     ```
@@ -109,7 +118,7 @@ This documentation provides details about the REST API endpoints for the **AeToo
     "title": "Episode 1",
     "episode_number": 1,
     "show_id": 1,
-    "video_url": "video-url"
+    "video_url": "https://example.com/video.mp4"
   }
   ```
 - **Response**:
@@ -120,7 +129,7 @@ This documentation provides details about the REST API endpoints for the **AeToo
       "id": 1,
       "title": "Episode 1",
       "episode_number": 1,
-      "video_url": "video-url",
+      "video_url": "https://vimeo.com/example",
       "show_id": 1
     }
     ```
@@ -135,15 +144,15 @@ This documentation provides details about the REST API endpoints for the **AeToo
   "id": 1,
   "title": "One Piece",
   "main_picture": {
-    "medium": "medium.jpg",
-    "large": "medium.jpg"
+    "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.jpg",
+    "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.jpg"
   },
   "episodes": [
     {
       "id": 1,
       "title": "Episode 1",
       "episode_number": 1,
-      "video_url": "video-url"
+      "video_url": "https://vimeo.com/example"
     }
   ]
 }
@@ -155,7 +164,7 @@ This documentation provides details about the REST API endpoints for the **AeToo
   "id": 1,
   "title": "Episode 1",
   "episode_number": 1,
-  "video_url": "video-url",
+  "video_url": "https://vimeo.com/example",
   "show_id": 1
 }
 ```
